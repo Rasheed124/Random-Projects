@@ -1,0 +1,15 @@
+/* font family: Abel */
+@font-face {
+    font-family: Abel;
+    src: url(../fonts/Abel/Abel-Regular.ttf);
+}
+/* font family: Abel */
+@font-face {
+    font-family: Livvic;
+    src: url(../fonts/Livvic/Livvic-Regular.ttf);
+}
+/* font family: Abel */
+@font-face {
+    font-family: Noto_Sans_KR;
+    src: url(../fonts/Noto_Sans_KR/NotoSansKR-Black.otf);
+}
