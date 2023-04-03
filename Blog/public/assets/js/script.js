@@ -1,32 +1,32 @@
 // NAVABR
-const   menuHarmburger = document.querySelector(".menu_harmburger");
-        side_menu_container = document.querySelector(".side_menu_container"),
-        side_menu = document.querySelector(".side_menu"),
-        mobile_active = document.querySelector(".mobile_active");
+const menuHarmburger = document.querySelector(".menu_harmburger");
+side_menu_container = document.querySelector(".side_menu_container"),
+  side_menu = document.querySelector(".side_menu"),
+  mobile_active = document.querySelector(".mobile_active");
 
-const  body_stack = document.querySelector(".body_stack");
+const body_stack = document.querySelector(".body_stack");
 
 
 
 
 // TOGGLE NAVBAR 
-menuHarmburger.addEventListener("click", (e)=>{
+menuHarmburger.addEventListener("click", (e) => {
 
   side_menu_container.classList.toggle("close");
 
 
 
-	});
+});
 
-  mobile_active.addEventListener("click", (e)=>{
+mobile_active.addEventListener("click", (e) => {
 
-    side_menu_container.classList.toggle("close");
+  side_menu_container.classList.toggle("close");
 
 
 
-   });
+});
 
-   
+
 
 // Header On scroll events
 const header = document.querySelector(".scroll_header");
@@ -38,10 +38,11 @@ const sectionOneOptions = {
   rootMargin: "-550px 0px 0px 0px"
 };
 
-const sectionOneObserver = new IntersectionObserver(function(
+const sectionOneObserver = new IntersectionObserver(function (
   entries,
   sectionOneObserver
-) {  entries.forEach(entry => {
+) {
+  entries.forEach(entry => {
     if (!entry.isIntersecting) {
       header.classList.add("scrolled");
       fixed_header.classList.add("remove_fixed_header");
@@ -52,18 +53,18 @@ const sectionOneObserver = new IntersectionObserver(function(
     }
   });
 },
-sectionOneOptions);
+  sectionOneOptions);
 
 sectionOneObserver.observe(sectionOne);
 
 
 
 
-$(document).ready(function(){
+$(document).ready(function () {
 
 
   //jquery for toggle sub menus
-  $('.listitem_dropdown').click(function(){
+  $('.listitem_dropdown').click(function () {
     $(this).toggleClass('list');
     $(this).find('.sub-menu').slideToggle();
     $(this).find('.dropdown').toggleClass('rotate');
@@ -71,21 +72,18 @@ $(document).ready(function(){
 
   var btn = $('#button');
 
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     if ($(window).scrollTop() > 300) {
       btn.addClass('backToTop');
     } else {
       btn.removeClass('backToTop');
     }
   });
-  
-  btn.on('click', function(e) {
-    e.preventDefault();
-    $('html, body').animate({scrollTop:0}, '300');
-  });
-  
-  
 
+  btn.on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, '300');
+  });
 
 
 
