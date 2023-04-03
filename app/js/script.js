@@ -62,6 +62,9 @@ function next(index) {
     left = (count + 1) * sliderWidth;
     left = Math.min(left, (sliderContentLength) * sliderWidth);
     sliderContent.style.transform = `translate3d(-${left}%, 0, 0)`;
+    let toggleItem = playerPlayList[count].querySelector(".player__img");
+
+    toggleItem.classList.toggle("active__player");
 
     count++;
     run();
@@ -75,6 +78,11 @@ function back(index) {
     left = (count - 1) * sliderWidth;
     left = Math.max(0, left);
     sliderContent.style.transform = `translate3d(-${left}%, 0, 0)`;
+
+    let toggleItem = playerPlayList[count].querySelector(".player__img");
+
+    toggleItem.classList.toggle("active__player");
+
 
     count--;
     run();
@@ -99,9 +107,6 @@ function changeSliderContext() {
 
             }
         })
-
-
-
     })
 
     if (sliderName.textContent.length > 16) {
