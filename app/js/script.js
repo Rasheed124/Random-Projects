@@ -83,9 +83,26 @@ function changeSliderContext() {
     sliderContext.style.animationName = "opacity";
     sliderName.textContent = playerPlayList[count].querySelector(".player__title").textContent;
     sliderTitle.textContent = playerPlayList[count].querySelector(".player__song-name").textContent;
-    window.rotateCurrentAudioImage = function () {
-        playerCurrentImage[count].classList.toggle("active__player")
-    }
+    let toggleItem = playerPlayList[count].querySelector(".player__img");
+
+    toggleItem.classList.add("active__player");
+
+
+    playerPlayList.forEach(item => {
+        item.addEventListener("click", () => {
+            let currentItem = item.querySelector('.player__img')
+
+            if (currentItem !== toggleItem) {
+                toggleItem.classList.remove("active__player");
+            } else {
+                toggleItem.classList.add("active__player");
+
+            }
+        })
+
+
+
+    })
 
     if (sliderName.textContent.length > 16) {
         const textWrap = document.createElement("span");
@@ -117,8 +134,6 @@ function run() {
     changeSliderContext();
     selectSong();
 }
-
-let stopfunction = false;
 
 
 
