@@ -64,7 +64,17 @@ function next(index) {
     sliderContent.style.transform = `translate3d(-${left}%, 0, 0)`;
     let toggleItem = playerPlayList[count].querySelector(".player__img");
 
-    toggleItem.classList.toggle("active__player");
+    playerPlayList.forEach(item => {
+
+        let currentItem = item.querySelector('.player__img')
+
+        if (currentItem !== toggleItem) {
+            toggleItem.classList.remove("active__player");
+        }
+
+    })
+
+
 
     count++;
     run();
@@ -81,7 +91,16 @@ function back(index) {
 
     let toggleItem = playerPlayList[count].querySelector(".player__img");
 
-    toggleItem.classList.toggle("active__player");
+
+    playerPlayList.forEach(item => {
+
+        let currentItem = item.querySelector('.player__img')
+
+        if (currentItem !== toggleItem) {
+            toggleItem.classList.remove("active__player");
+        }
+
+    })
 
 
     count--;
@@ -191,6 +210,15 @@ sliderContext.addEventListener("animationend", () => sliderContext.style.animati
 playlistButton.addEventListener("click", closePlayer);
 nextButton.addEventListener("click", () => {
     next(0)
+
+    // playerPlayList.forEach(item => {
+
+    //     let currentItem = item.querySelector('.player__img')
+
+    //     if (currentItem.classList.contains("active__player")) {
+    //         currentItem.classList.remove("active__player")
+    //     }
+    // })
 });
 backButton.addEventListener("click", () => {
     back(0)
@@ -198,6 +226,9 @@ backButton.addEventListener("click", () => {
 playButton.addEventListener("click", () => {
     isPlay = true;
     playSong();
+
+
+
 });
 playerSongs.forEach(song => {
     song.addEventListener("loadeddata", durationSongs);
