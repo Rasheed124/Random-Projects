@@ -79,7 +79,7 @@ body {
 }
 
 .player__header.open-header {
-    height: 46%;
+    height: 56%;
     padding-left: 0;
     padding-right: 0;
     box-shadow: unset;
@@ -347,9 +347,9 @@ img[alt="pause-icon"] {
 
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1080px) {
     .player__header.open-header {
-        height: 40%;
+        height: 50%;
     }
 
 }
