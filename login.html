@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="./css/login.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Login</title>
+</head>
+
+<body>
+
+
+
+    <!-- --------------- HEADER  START -->
+    <header>
+        <div class="header-container">
+
+            <div class="header" id="header">
+                <div class="header-wrapper">
+                    <!-- ---------- HEADER TOP -->
+                    <div class="header-top">
+                        <div class="top-wrapper">
+                            <ul class="">
+                                <li>
+                                    <i class="fa-solid fa-envelope-circle-check"></i>
+                                    <a href="#">
+                                        :info@xtyz@gmail.com
+                                    </a>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-phone"></i>
+                                    <a href="#">
+                                        +234 805 605 6077
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="icons">
+                                <li>
+
+                                    <a href="#">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-linkedin"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- ---------- HEADER MENU -->
+                    <section class="wrapper-container ">
+                        <div class="wrapper ">
+                            <a href="./login.html" class="brand">
+
+                            </a>
+
+                            <div class="burger" id="burger">
+                                <span class="burger-line"></span>
+                                <span class="burger-line"></span>
+                                <span class="burger-line"></span>
+                            </div>
+
+                            <span class="overlay"></span>
+                            <nav class="navbar" id="navbar">
+                                <ul class="menu" id="menu">
+                                    <li class="menu-item"><a href="#" class="menu-link">Video Library</a></li>
+                                    <li class="menu-item menu-dropdown">
+                                        <span class="menu-link" data-toggle="submenu">Facebook Groups<i
+                                                class="bx bx-chevron-down"></i>
+                                        </span>
+                                        <ul class="submenu">
+                                            <li class="submenu-item"><a href="#" class="submenu-link">Feature
+                                                    Link</a>
+                                            </li>
+                                            <li class="submenu-item"><a href="#" class="submenu-link">Feature
+                                                    Link</a>
+                                            </li>
+                                            <li class="submenu-item"><a href="#" class="submenu-link">Feature
+                                                    Link</a>
+                                            </li>
+                                            <li class="submenu-item"><a href="#" class="submenu-link">Feature
+                                                    Link</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-dropdown">
+                                        <span class="menu-link" data-toggle="submenu">Facebook Groups<i
+                                                class="bx bx-chevron-down"></i></span>
+                                        <ul class="submenu">
+                                            <li class="submenu-item"><a href="#" class="submenu-link">Resource
+                                                    Link</a>
+                                            </li>
+                                            <li class="submenu-item"><a href="#" class="submenu-link">Resource
+                                                    Link</a>
+                                            </li>
+                                            <li class="submenu-item"><a href="#" class="submenu-link">Resource
+                                                    Link</a>
+                                            </li>
+                                            <li class="submenu-item"><a href="#" class="submenu-link">Resource
+                                                    Link</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item"><a href="#" class="menu-link">Book 1-1 Call</a></li>
+
+
+                                    <li class="menu-item item-btn"><a href="./login.html" class="menu-link">Login <i
+                                                class="fa-solid fa-arrow-left-long"></i></a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                    </section>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- --------------- HEADER  END -->
+
+    <main class="main">
+        <div class="form-container">
+            <section class="form-wrapper">
+                <div class="heading">
+                    <h1 class="text text-large">Sign In</h1>
+                    <p class="text text-normal">New user? <span><a href="#" class="text text-links">Create an
+                                account</a></span>
+                    </p>
+                </div>
+                <form name="signin" class="form">
+                    <div class="input-control">
+                        <label for="email" class="input-label" hidden>Email Address</label>
+                        <input type="email" name="email" id="email" class="input-field" placeholder="Email Address">
+                    </div>
+                    <div class="input-control">
+                        <label for="password" class="input-label" hidden>Password</label>
+                        <input type="password" name="password" id="password" class="input-field" placeholder="Password">
+                    </div>
+                    <div class="input-control">
+                        <a href="#" class="text text-links">Forgot Password</a>
+                        <input type="submit" name="submit" class="input-submit" value="Sign In" disabled>
+                    </div>
+                </form>
+                <div class="striped">
+                    <span class="striped-line"></span>
+                    <span class="striped-text">Or</span>
+                    <span class="striped-line"></span>
+                </div>
+                <div class="method">
+                    <div class="method-control">
+                        <a href="#" class="method-action">
+                            <i class="fa-brands fa-google"></i>
+                            <span>Sign in with Google</span>
+                        </a>
+                    </div>
+                    <div class="method-control">
+                        <a href="#" class="method-action">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <span>Sign in with Facebook</span>
+                        </a>
+                    </div>
+                    <div class="method-control">
+                        <a href="#" class="method-action">
+                            <i class="fa-brands fa-twitter"></i>
+                            <span>Sign in with Twitter</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"
+        integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+
+    <script src="./js/script.js"></script>
+
+
+
+
+</body>
+
+</html>
